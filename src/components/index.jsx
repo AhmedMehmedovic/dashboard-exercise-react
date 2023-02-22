@@ -1,4 +1,4 @@
-export { default as Button } from "./Button/button";
+export { default as Button } from "./Button/Button";
 export { default as ThemeSettings } from "./Theme/ThemeSettings";
 export { default as Sidebar } from "./Sidebar/Sidebar";
 export { default as Header } from "./Header/Header";
@@ -13,3 +13,5 @@ export { default as ChartsHeader } from "./Charts/ChartsHeader";
 export { default as Notification } from "./Notification/Notification";
 export { default as UserProfile } from "./UserProfile/UserProfile";
 export { default as Cart } from "./Cart/Cart";
+export { default as EcommerceCards } from "./Ecommerce/EcommerceCards";
+export { default as RevenueCard } from "./Ecommerce/RevenueCard";
