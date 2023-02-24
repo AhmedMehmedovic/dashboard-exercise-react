@@ -1,11 +1,9 @@
 import React from "react";
-import { BsCurrencyDollar } from "react-icons/bs";
-import { GoPrimitiveDot } from "react-icons/go";
-import { Pie, Button, SparkLine, EcommerceCards, RevenueCard } from "../components";
-import { earningData, SparklineAreaData, ecomPieChartData } from "../data/dummy";
+import { Button, EcommerceCards, RevenueCard } from "../components";
 import { useStateContext } from "../contexts/ContextProvider";
 
 function Ecommerce() {
+  const { currentColor } = useStateContext();
   return (
     <div className="mt-12">
       <div className="flex flex-wrap lg:flex-nowrap justify-center">
@@ -17,7 +15,7 @@ function Ecommerce() {
             </div>
           </div>
           <div className="mt-6">
-            <Button color="white" bgColor="blue" text="Download" borderRadius="10px" size="md" />
+            <Button color="white" bgColor={currentColor} text="Download" borderRadius="10px" size="md" />
           </div>
         </div>
         <EcommerceCards />
