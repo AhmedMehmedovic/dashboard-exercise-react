@@ -1,9 +1,9 @@
 # syntax=docker/dockerfile:1
    
-FROM node:15.13-alpine
+FROM node:current-alpine
 WORKDIR /dashboard/
 COPY package*.json ./
 
 RUN npm install 
-
-CMD [ "npm", 'start' ] 
+COPY . .
+CMD [ "npm", "start" ] 
