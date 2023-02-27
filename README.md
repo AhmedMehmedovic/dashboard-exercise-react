@@ -15,3 +15,5 @@ The application is a simple example of a panel that contains calendar pages with
 The project is interesting and you can learn a lot while making it.
 
 Screenshot app in ligth and dark mode.
+![Scrn 1](https://user-images.githubusercontent.com/90158693/221515431-91911a00-a887-4ed5-a3a0-590601de8e10.jpg)
+![Scrn darkmode](https://user-images.githubusercontent.com/90158693/221515450-80023901-62cc-43c1-8a36-0b93b47dcd5f.jpg)
