@@ -20,7 +20,7 @@ function Sidebar() {
   };
 
   return (
-    <div className="ml-3 h-screen md:overflow-hidden overflow-auto md:hover:overflow-auto  bg-white pb-10">
+    <div className="ml-3 h-screen md:overflow-hidden overflow-auto md:hover:overflow-auto  pb-10">
       {activeMenu && (
         <>
           <div className="flex justify-between items-center">
@@ -29,7 +29,7 @@ function Sidebar() {
               onClick={handleCloseSideBar}
               className="items-center gap-3 ml-3 mt-4 flex text-xl font-extrabold tracking-tight dark:text-white text-slate-900"
             >
-              <SiShopware /> <span> Shoppy</span>
+              <SiShopware /> <span> Dashboard</span>
             </Link>
             <TooltipComponent content="Menu" position="BottomCenter">
               <button
@@ -46,7 +46,7 @@ function Sidebar() {
               {links.map((item) => {
                 return (
                   <div key={item.title}>
-                    <p className="text-gray-400 m-3 mt-4 uppercase"> {item.title}</p>
+                    <p className="text-gray-400 m-3 mt-4 dark:text-gray-400 uppercase"> {item.title}</p>
                     {item.links.map((link) => {
                       return (
                         <NavLink

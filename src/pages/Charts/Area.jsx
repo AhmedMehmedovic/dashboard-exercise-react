@@ -1,7 +1,7 @@
 import React from "react";
 
 function Area() {
-  return <div>Area</div>;
+  return <div>Have to add code for charts</div>;
 }
 
 export default Area;

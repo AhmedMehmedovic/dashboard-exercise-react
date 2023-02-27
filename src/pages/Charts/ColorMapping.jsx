@@ -1,7 +1,7 @@
 import React from "react";
 
 function ColorMapping() {
-  return <div>ColorMapping</div>;
+  return <div>Have to add code for charts</div>;
 }
 
 export default ColorMapping;
