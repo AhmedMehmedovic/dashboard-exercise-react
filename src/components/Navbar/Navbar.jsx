@@ -30,17 +30,18 @@ let counter = 0;
 function Navbar() {
   const { activeMenu, setActiveMenu, isClicked, setIsClicked, handleClick, screenSize, setScreenSize, currentColor } = useStateContext();
 
-  const [title, setTitle] = useState(window.location.pathname.split("/"));
+  const [title, setTitle] = useState();
   const [clickedButtons, setClickedButtons] = useState([]);
 
-  function handleClickChangeTitle(btnName) {
-    if (title === undefined) {
-      setTitle(btnName);
-    }
+  useTitle(title);
 
+  function handleClickChangeTitle(btnName) {
     if (clickedButtons.includes(btnName)) {
       clickedButtons.splice(clickedButtons.indexOf(btnName), 1);
       counter = 0;
+      if (clickedButtons.length === 0) {
+        setTitle(window.location.pathname.split("/")[1]);
+      }
       return;
     } else {
       setClickedButtons((prevValue) => {
@@ -48,7 +49,7 @@ function Navbar() {
       });
     }
   }
-  console.log(counter);
+
   useEffect(
     () => {
       const interval = setInterval(() => {
@@ -68,7 +69,6 @@ function Navbar() {
     clickedButtons.length > 0 ? [clickedButtons] : [title]
   );
 
-  useTitle(title);
   //prilagođavanje screen za mobilne uredjaje kako ne bi sidebar u potpiunosti zauzeo cijeli display
   useEffect(() => {
     const handleResize = () => setScreenSize(window.innerWidth);
