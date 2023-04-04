@@ -10,17 +10,17 @@ import { HiOutlineRefresh } from "react-icons/hi";
 import { TiTick } from "react-icons/ti";
 import { GiLouvrePyramid } from "react-icons/gi";
 import { GrLocation } from "react-icons/gr";
-import avatar from "./avatar.jpg";
-import avatar2 from "./avatar2.jpg";
-import avatar3 from "./avatar3.png";
-import avatar4 from "./avatar4.jpg";
-import product1 from "./product1.jpg";
-import product2 from "./product2.jpg";
-import product3 from "./product3.jpg";
-import product4 from "./product4.jpg";
-import product5 from "./product5.jpg";
-import product6 from "./product6.jpg";
-import product7 from "./product7.jpg";
+import avatar from "./img/avatar.jpg";
+import avatar2 from "./img/avatar2.jpg";
+import avatar3 from "./img/avatar3.png";
+import avatar4 from "./img/avatar4.jpg";
+import product1 from "./img/product1.jpg";
+import product2 from "./img/product2.jpg";
+import product3 from "./img/product3.jpg";
+import product4 from "./img/product4.jpg";
+import product5 from "./img/product5.jpg";
+import product6 from "./img/product6.jpg";
+import product7 from "./img/product7.jpg";
 
 export const gridOrderImage = (props) => (
   <div>

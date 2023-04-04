@@ -4,9 +4,11 @@ import { ChartComponent, SeriesCollectionDirective, SeriesDirective, Inject, Dat
 import { Header } from "../../components";
 import { areaCustomSeries, areaPrimaryXAxis, areaPrimaryYAxis } from "../../data/dummy";
 import { useStateContext } from "../../contexts/ContextProvider";
+import { useTitle } from "react-use";
 
 const Area = () => {
   const { currentMode } = useStateContext();
+  useTitle("Area");
 
   return (
     <div className="m-4 md:m-10 mt-24 p-10 bg-white dark:bg-secondary-dark-bg rounded-3xl">
