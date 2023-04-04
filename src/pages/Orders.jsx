@@ -16,8 +16,10 @@ import {
 
 import { ordersData, ordersGrid } from "../data/dummy";
 import { Header } from "../components";
+import { useTitle } from "react-use";
 
 function Orders() {
+  useTitle("Orders");
   return (
     <div className="m-2  p-2  bg-white rounded-3xl">
       <Header title="Orders" category="Page" />

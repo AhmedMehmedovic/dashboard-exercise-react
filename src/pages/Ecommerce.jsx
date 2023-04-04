@@ -1,8 +1,10 @@
 import React from "react";
 import { Button, EcommerceCards, RevenueCard } from "../components";
 import { useStateContext } from "../contexts/ContextProvider";
+import { useTitle } from "react-use";
 
 function Ecommerce() {
+  useTitle("Ecommerce");
   const { currentColor } = useStateContext();
   return (
     <div className="mt-12">
