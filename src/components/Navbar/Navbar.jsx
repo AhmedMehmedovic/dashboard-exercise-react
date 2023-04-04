@@ -40,7 +40,7 @@ function Navbar() {
       clickedButtons.splice(clickedButtons.indexOf(btnName), 1);
       counter = 0;
       if (clickedButtons.length === 0) {
-        setTitle(window.location.pathname.split("/")[1]);
+        setTitle(window.location.pathname.split("/")[1].charAt(0).toUpperCase() + window.location.pathname.split("/")[1].slice(1));
       }
       return;
     } else {
